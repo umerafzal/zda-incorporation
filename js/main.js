@@ -120,34 +120,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Contact Form Handler ---
+  // Form submits to FormSubmit.co which emails aliafzalch@zdaincorporation.com
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
       const formData = new FormData(contactForm);
       const data = Object.fromEntries(formData.entries());
 
-      // Simple validation
+      // Client-side validation
       if (!data.name || !data.email || !data.subject || !data.message) {
+        e.preventDefault();
         showNotification('Please fill in all fields.', 'error');
         return;
       }
 
-      // Since this is a static site, we show a success message
-      // In production, you'd send this to an API endpoint or use a service like Formspree
+      // Show sending state (form will submit natively to FormSubmit.co)
       const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
       submitBtn.disabled = true;
-
-      // Simulate sending (replace with actual API call)
-      setTimeout(() => {
-        showNotification('Thank you! Your message has been sent successfully.', 'success');
-        contactForm.reset();
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-      }, 1500);
     });
   }
 
