@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetterAssist — AI-Powered Letter Interpreter | ZDA Incorporation</title>
+  <meta name="description" content="LetterAssist helps you understand official and bureaucratic letters using AI. View our terms and conditions and privacy policy.">
+  <meta name="keywords" content="LetterAssist, AI letter interpreter, document scanner, OCR, ZDA Incorporation, official letters, bureaucratic letters">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/letter-assist.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">Z</span>
+        <span class="logo-text">ZDA<span class="logo-highlight"> Inc.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#terms">Terms & Conditions</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+      <a href="index.html" class="nav-cta">
+        <i class="fas fa-arrow-left"></i> Main Site
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero / Introduction Section -->
+  <section class="la-hero" id="introduction">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="la-hero-content" data-animate="fade-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          A Product by ZDA Incorporation Limited
+        </div>
+        <h1>
+          <span class="gradient-text">LetterAssist</span>
+        </h1>
+        <p class="la-hero-tagline">AI-Powered Letter Interpreter</p>
+        <p class="hero-subtitle">
+          LetterAssist is a mobile application that uses artificial intelligence to help you understand official and bureaucratic letters. Simply scan or photograph any letter, and get an instant, structured interpretation — including summaries, required actions, deadlines, and payment information.
+        </p>
+
+        <div class="la-features-grid" data-animate="fade-up" data-delay="100">
+          <div class="la-feature">
+            <div class="la-feature-icon"><i class="fas fa-camera"></i></div>
+            <h3>Scan & Capture</h3>
+            <p>Photograph or import any official letter. OCR extracts text entirely on your device — your documents never leave your phone.</p>
+          </div>
+          <div class="la-feature">
+            <div class="la-feature-icon"><i class="fas fa-brain"></i></div>
+            <h3>AI Interpretation</h3>
+            <p>Advanced AI analyses your letter and provides a structured breakdown: summary, urgency level, required actions, and key dates.</p>
+          </div>
+          <div class="la-feature">
+            <div class="la-feature-icon"><i class="fas fa-bell"></i></div>
+            <h3>Deadline Reminders</h3>
+            <p>Never miss an important deadline. LetterAssist automatically extracts dates and lets you set local reminders.</p>
+          </div>
+          <div class="la-feature">
+            <div class="la-feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3>Privacy First</h3>
+            <p>No personal data collected. No account required. Your original letter content is never stored on our servers.</p>
+          </div>
+        </div>
+
+        <div class="la-hero-actions" data-animate="fade-up" data-delay="200">
+          <a href="#terms" class="btn btn-primary">
+            Terms & Conditions
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="#privacy" class="btn btn-outline">
+            Privacy Policy
+            <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <div class="la-toc-bar">
+    <div class="container">
+      <div class="la-toc" data-animate="fade-up">
+        <span class="la-toc-label">On this page:</span>
+        <a href="#introduction" class="la-toc-link"><i class="fas fa-info-circle"></i> Introduction</a>
+        <a href="#terms" class="la-toc-link"><i class="fas fa-file-contract"></i> Terms & Conditions</a>
+        <a href="#privacy" class="la-toc-link"><i class="fas fa-user-shield"></i> Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Section -->
+  <section class="legal-section" id="terms">
+    <div class="container">
+      <div class="legal-header" data-animate="fade-up">
+        <span class="section-tag">Legal</span>
+        <h2>Terms & <span class="gradient-text">Conditions</span></h2>
+        <p class="section-subtitle">Last updated: February 16, 2026</p>
+      </div>
+      <div class="legal-content" data-animate="fade-up" data-delay="100">
+
+        <div class="legal-intro">
+          <p>Please read these Terms & Conditions ("Terms") carefully before using the LetterAssist mobile application ("App") operated by ZDA Incorporation ("we", "us", "our").</p>
+          <p>By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">1.</span> Description of Service</h3>
+          <p>LetterAssist is a mobile application that uses artificial intelligence ("AI") to help users understand official and bureaucratic letters, primarily in German and other European languages. The App extracts text from documents using optical character recognition (OCR) and generates structured interpretations including summaries, required actions, deadlines, and payment information.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">2.</span> Important Disclaimers</h3>
+
+          <h4>2.1 AI-Generated Content</h4>
+          <p>All interpretations provided by the App are <strong>generated by artificial intelligence</strong> and may contain errors, inaccuracies, or omissions. The AI may:</p>
+          <ul>
+            <li>Misinterpret or incorrectly translate text</li>
+            <li>Fail to identify important information</li>
+            <li>Extract incorrect dates, amounts, or bank details</li>
+            <li>Misclassify the type or urgency of a letter</li>
+          </ul>
+          <div class="legal-callout legal-callout-warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p><strong>You must always verify all information against the original letter.</strong></p>
+          </div>
+
+          <h4>2.2 Not Professional Advice</h4>
+          <p>The App does <strong>NOT</strong> provide and is <strong>NOT</strong> a substitute for:</p>
+          <ul>
+            <li>Legal advice</li>
+            <li>Tax advice</li>
+            <li>Financial advice</li>
+            <li>Medical advice</li>
+            <li>Official government services</li>
+          </ul>
+          <p>The interpretations are for <strong>informational purposes only</strong>. For important matters, always consult a qualified professional (lawyer, tax advisor, financial advisor, etc.).</p>
+
+          <h4>2.3 No Official Affiliation</h4>
+          <p>LetterAssist is <strong>not affiliated with, endorsed by, or connected to</strong> any government agency, public authority, insurance company, bank, healthcare provider, or any other official institution. The App is an independent third-party tool.</p>
+
+          <h4>2.4 No Guarantee of Accuracy</h4>
+          <p>We do not guarantee the accuracy, completeness, or reliability of any interpretation. We are not responsible for any actions you take or fail to take based on information provided by the App, including but not limited to:</p>
+          <ul>
+            <li>Missed deadlines</li>
+            <li>Incorrect payments</li>
+            <li>Misunderstood legal obligations</li>
+            <li>Financial losses</li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">3.</span> User Accounts and Authentication</h3>
+          <p>The App uses anonymous authentication. No personal information (name, email, phone number) is required to use the App. A unique anonymous identifier is automatically generated for credit management purposes.</p>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">4.</span> Credits and Purchases</h3>
+
+          <h4>4.1 Free Credits</h4>
+          <p>New users receive <strong>3 free interpretation credits</strong> upon first use. Each credit allows one document interpretation.</p>
+
+          <h4>4.2 Credit Packages</h4>
+          <p>Additional credits can be purchased through the App via in-app purchases:</p>
+          <div class="legal-table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Package</th><th>Price</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>10 credits</td><td>4.99 EUR</td></tr>
+                <tr><td>25 credits</td><td>7.99 EUR</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Prices may vary by region and are subject to change. The applicable price is displayed at the time of purchase.</p>
+
+          <h4>4.3 Credit Consumption</h4>
+          <p>One credit is consumed per successful interpretation. Credits are deducted after the interpretation is completed. Credits are <strong>non-refundable</strong> and <strong>non-transferable</strong>.</p>
+
+          <h4>4.4 Payment Processing</h4>
+          <p>All payments are processed through Apple's App Store via RevenueCat. By making a purchase, you also agree to Apple's App Store terms.</p>
+
+          <h4>4.5 Restore Purchases</h4>
+          <p>You can restore previously purchased credits on a new device or after reinstalling the App using the "Restore Purchases" feature in Settings.</p>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">5.</span> Acceptable Use</h3>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Use the App for any unlawful purpose</li>
+            <li>Attempt to reverse-engineer, decompile, or extract source code from the App</li>
+            <li>Attempt to bypass credit requirements or manipulate the credit system</li>
+            <li>Submit content that is illegal, harmful, or violates third-party rights</li>
+            <li>Use the App to process documents you do not have the right to access</li>
+            <li>Overload or interfere with the App's servers or infrastructure</li>
+          </ul>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">6.</span> Intellectual Property</h3>
+          <p>The App, including its design, code, prompts, and user interface, is the intellectual property of ZDA Incorporation. You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.</p>
+          <p>Interpretations generated by the App are provided for your personal use. The original letters you scan remain your property — we do not claim any rights over your documents.</p>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">7.</span> Document Processing</h3>
+
+          <h4>7.1 How It Works</h4>
+          <ol>
+            <li>You capture or import a document (photo, camera, or PDF)</li>
+            <li>Text is extracted on your device using Apple's OCR technology</li>
+            <li>The extracted text is sent to our secure server for AI analysis</li>
+            <li>The AI interpretation is returned to your device</li>
+            <li>Only the interpretation (not the original document) may be saved locally on your device</li>
+          </ol>
+
+          <h4>7.2 Original Document Content</h4>
+          <p>The original letter text is <strong>not stored</strong> by the App or on our servers. It is transmitted to our server solely for the purpose of generating an interpretation and is not retained after processing.</p>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">8.</span> Reminders and Notifications</h3>
+          <p>The App can set local reminders for deadlines extracted from letters. These reminders are:</p>
+          <ul>
+            <li>Stored locally on your device only</li>
+            <li>Delivered via iOS local notifications</li>
+            <li>Not synced to any server</li>
+          </ul>
+          <div class="legal-callout legal-callout-info">
+            <i class="fas fa-info-circle"></i>
+            <p>Reminder accuracy depends on the accuracy of the AI interpretation. Always verify deadlines against the original letter.</p>
+          </div>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">9.</span> Service Availability</h3>
+          <p>We strive to keep the App available at all times, but we do not guarantee uninterrupted service. The App may be temporarily unavailable due to:</p>
+          <ul>
+            <li>Maintenance or updates</li>
+            <li>Server outages</li>
+            <li>Third-party service disruptions (OpenAI, Firebase, etc.)</li>
+            <li>Network connectivity issues</li>
+          </ul>
+          <p>An offline mode using on-device AI may be available on supported devices (requires iOS 26 or later with Apple Intelligence), but may provide lower-quality results.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">10.</span> Limitation of Liability</h3>
+          <p>To the maximum extent permitted by applicable law:</p>
+          <ul>
+            <li>The App is provided "as is" and "as available" without warranties of any kind</li>
+            <li>We disclaim all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement</li>
+            <li>We are not liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from your use of the App</li>
+            <li>Our total liability shall not exceed the amount you paid for credits in the 12 months preceding the claim</li>
+          </ul>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">11.</span> Indemnification</h3>
+          <p>You agree to indemnify and hold harmless ZDA Incorporation from any claims, damages, losses, or expenses (including legal fees) arising from your use of the App or violation of these Terms.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">12.</span> Changes to Terms</h3>
+          <p>We reserve the right to modify these Terms at any time. Changes will be effective when posted in the App or on our website. Continued use of the App after changes constitutes acceptance of the modified Terms.</p>
+          <p>We will notify users of material changes through the App.</p>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">13.</span> Termination</h3>
+          <p>We may suspend or terminate your access to the App at any time, without notice, for conduct that we determine violates these Terms or is harmful to other users or our services.</p>
+          <p>Upon termination, your license to use the App is revoked. Unused credits are non-refundable upon termination.</p>
+        </div>
+
+        <!-- Section 14 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">14.</span> Governing Law</h3>
+          <p>These Terms are governed by and construed in accordance with the laws of Germany, without regard to conflict of law principles. Any disputes shall be resolved in the courts of Germany.</p>
+        </div>
+
+        <!-- Section 15 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">15.</span> Severability</h3>
+          <p>If any provision of these Terms is found to be unenforceable, the remaining provisions shall continue in full force and effect.</p>
+        </div>
+
+        <!-- Section 16 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">16.</span> Contact</h3>
+          <p>If you have questions about these Terms, please contact us at:</p>
+          <div class="legal-contact">
+            <p><strong>ZDA Incorporation</strong></p>
+            <p>Email: <a href="mailto:aliafzalch@zdaincorporation.com">aliafzalch@zdaincorporation.com</a></p>
+          </div>
+        </div>
+
+        <div class="legal-acceptance">
+          <i class="fas fa-check-circle"></i>
+          <p><em>By using LetterAssist, you acknowledge that you have read, understood, and agree to these Terms & Conditions.</em></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section class="legal-section legal-section-alt" id="privacy">
+    <div class="container">
+      <div class="legal-header" data-animate="fade-up">
+        <span class="section-tag">Legal</span>
+        <h2>Privacy <span class="gradient-text">Policy</span></h2>
+        <p class="section-subtitle">Last updated: February 16, 2026</p>
+      </div>
+      <div class="legal-content" data-animate="fade-up" data-delay="100">
+
+        <div class="legal-intro">
+          <p>This Privacy Policy describes how ZDA Incorporation ("we", "us", "our") collects, uses, and protects your information when you use the LetterAssist mobile application ("App").</p>
+          <p>We are committed to protecting your privacy. LetterAssist is designed with privacy in mind — we collect the minimum data necessary to provide the service, and we never store the original content of your letters.</p>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">1.</span> Information We Collect</h3>
+
+          <h4>1.1 Information Collected Automatically</h4>
+          <div class="legal-table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Data</th><th>Purpose</th><th>Storage</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Anonymous User ID</strong></td><td>Identify your account for credit management</td><td>Firebase servers</td></tr>
+                <tr><td><strong>Credit balance</strong></td><td>Track available and used interpretation credits</td><td>Firebase servers</td></tr>
+                <tr><td><strong>Usage statistics</strong></td><td>Total interpretations used, last scan date</td><td>Firebase servers</td></tr>
+                <tr><td><strong>Analytics events</strong></td><td>Improve app quality and user experience</td><td>Firebase Analytics</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="legal-callout legal-callout-success">
+            <i class="fas fa-shield-alt"></i>
+            <p><strong>We do NOT collect</strong>: your name, email address, phone number, physical address, location data, contacts, or any other personally identifiable information (PII).</p>
+          </div>
+
+          <h4>1.2 Information You Provide</h4>
+          <div class="legal-table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Data</th><th>Purpose</th><th>Storage</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Document images/PDFs</strong></td><td>Extract text for interpretation</td><td>Processed on-device only; never stored</td></tr>
+                <tr><td><strong>Extracted letter text</strong></td><td>Generate AI interpretation</td><td>Sent to server for processing; not retained</td></tr>
+                <tr><td><strong>Interpretation results</strong></td><td>Display and save results for your reference</td><td>Stored locally on your device only</td></tr>
+                <tr><td><strong>Reminders</strong></td><td>Notify you of upcoming deadlines</td><td>Stored locally on your device only</td></tr>
+                <tr><td><strong>App preferences</strong></td><td>Personalize your experience</td><td>Stored locally on your device only</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>1.3 Information NOT Collected or Stored</h4>
+          <ul>
+            <li><strong>Original letter content</strong>: The text extracted from your letters is transmitted for AI processing but is <strong>never stored</strong> on our servers or in any database</li>
+            <li><strong>Document images</strong>: Photos or PDFs you scan are processed on your device and never uploaded</li>
+            <li><strong>Personal identity</strong>: No login, registration, or personal details are required</li>
+          </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">2.</span> How We Use Your Information</h3>
+          <p>We use the collected information solely to:</p>
+          <ul>
+            <li><strong>Provide the service</strong>: Process documents and generate AI interpretations</li>
+            <li><strong>Manage credits</strong>: Track your credit balance and process purchases</li>
+            <li><strong>Deliver notifications</strong>: Send local deadline reminders you set</li>
+            <li><strong>Improve the App</strong>: Analyze anonymous usage patterns to improve quality and performance</li>
+            <li><strong>Prevent abuse</strong>: Protect against unauthorized use of the service</li>
+          </ul>
+          <div class="legal-callout legal-callout-success">
+            <i class="fas fa-ban"></i>
+            <p>We do <strong>NOT</strong> use your information for: advertising or marketing, selling to third parties, user profiling or behavioral targeting, or training AI models with your document content.</p>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">3.</span> How Document Processing Works</h3>
+          <p>Understanding exactly what happens to your data:</p>
+          <ol>
+            <li><strong>On Your Device</strong>: You capture or import a document. Apple's Vision framework extracts text from the image entirely on your device. The original image is not uploaded anywhere.</li>
+            <li><strong>Transmitted to Our Server</strong>: The extracted text is sent via an encrypted connection to our Firebase Cloud Function server.</li>
+            <li><strong>Processed by AI</strong>: Our server forwards the text to OpenAI's API for interpretation. The text is processed and an interpretation is returned.</li>
+            <li><strong>Returned to You</strong>: The structured interpretation is sent back to your device. You may choose to save it locally.</li>
+            <li><strong>Not Retained</strong>: The original letter text is not stored on our servers or by the Cloud Function after processing is complete.</li>
+          </ol>
+
+         </div>
+
+        <!-- Section 4 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">4.</span> Third-Party Services</h3>
+          <p>We use the following third-party services to operate the App:</p>
+
+          <h4>4.1 Firebase (Google)</h4>
+          <ul>
+            <li><strong>Services used</strong>: Anonymous Authentication, Cloud Functions, Firestore Database, Analytics</li>
+            <li><strong>Data shared</strong>: Anonymous user ID, credit balance, anonymous usage events</li>
+            <li><strong>Purpose</strong>: User authentication, server-side processing, data storage, analytics</li>
+            <li><strong>Privacy policy</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">firebase.google.com/support/privacy</a></li>
+          </ul>
+
+          <h4>4.2 OpenAI</h4>
+          <ul>
+            <li><strong>Services used</strong>: GPT-4o-mini API (via server-side proxy)</li>
+            <li><strong>Data shared</strong>: Extracted letter text (for interpretation only)</li>
+            <li><strong>Purpose</strong>: AI-powered document interpretation</li>
+            <li><strong>Data retention</strong>: Per OpenAI's API data usage policy, API data is not used for model training</li>
+            <li><strong>Privacy policy</strong>: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">openai.com/policies/privacy-policy</a></li>
+          </ul>
+
+          <h4>4.3 RevenueCat</h4>
+          <ul>
+            <li><strong>Services used</strong>: In-app purchase management</li>
+            <li><strong>Data shared</strong>: Anonymous user ID, purchase transaction data</li>
+            <li><strong>Purpose</strong>: Process and validate in-app purchases</li>
+            <li><strong>Privacy policy</strong>: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">revenuecat.com/privacy</a></li>
+          </ul>
+
+          <h4>4.4 Apple</h4>
+          <ul>
+            <li><strong>Services used</strong>: Vision framework (OCR), Foundation Models (offline AI), App Store (purchases), UserNotifications (reminders), EventKit (calendar)</li>
+            <li><strong>Data shared</strong>: Standard App Store purchase data</li>
+            <li><strong>On-device processing</strong>: OCR and offline AI processing happen entirely on your device</li>
+            <li><strong>Privacy policy</strong>: <a href="https://www.apple.com/privacy" target="_blank" rel="noopener noreferrer">apple.com/privacy</a></li>
+          </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">5.</span> Data Storage and Security</h3>
+
+          <h4>5.1 On-Device Storage</h4>
+          <ul>
+            <li><strong>Interpretation results</strong>: Stored locally using Apple's SwiftData framework in an encrypted SQLite database</li>
+            <li><strong>Reminders</strong>: Stored locally on your device</li>
+            <li><strong>Preferences</strong>: Stored in iOS UserDefaults on your device</li>
+            <li><strong>No cloud sync</strong>: Local data is not synced to any cloud service</li>
+          </ul>
+
+          <h4>5.2 Server-Side Storage</h4>
+          <ul>
+            <li><strong>Firestore</strong>: Stores only your anonymous user ID, credit balance, usage count, and timestamps</li>
+            <li><strong>No letter content</strong>: Original document text is never stored server-side</li>
+            <li><strong>Security rules</strong>: Firestore access is restricted — users can only read their own data; only server functions can write</li>
+          </ul>
+
+          <h4>5.3 Security Measures</h4>
+          <ul>
+            <li>All network communication uses TLS/HTTPS encryption</li>
+            <li>The OpenAI API key is stored server-side and never exposed to client devices</li>
+            <li>Firebase Security Rules prevent unauthorized data access</li>
+            <li>Anonymous authentication means no passwords or credentials are stored</li>
+            <li>iOS app sandboxing isolates app data from other applications</li>
+          </ul>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">6.</span> Data Retention</h3>
+          <div class="legal-table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Data</th><th>Retention Period</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Anonymous user ID & credits</strong></td><td>Retained on server until account deletion is requested</td></tr>
+                <tr><td><strong>Interpretation results</strong></td><td>Stored on your device until you delete them</td></tr>
+                <tr><td><strong>Reminders</strong></td><td>Stored on your device until you delete them</td></tr>
+                <tr><td><strong>Analytics data</strong></td><td>Retained per Firebase Analytics defaults (14 months)</td></tr>
+                <tr><td><strong>Original letter text</strong></td><td>Not retained — processed in transit only</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">7.</span> Your Rights and Controls</h3>
+
+          <h4>7.1 Delete Interpretation History</h4>
+          <p>You can delete saved interpretations at any time by swiping to delete in the History tab. Deleting an interpretation also removes all associated reminders.</p>
+
+          <h4>7.2 Delete Reminders</h4>
+          <p>You can delete individual reminders in the Reminders tab.</p>
+
+          <h4>7.3 Manage Permissions</h4>
+          <p>You can revoke camera, photo library, notification, and calendar permissions at any time through iOS Settings.</p>
+
+          <h4>7.4 Delete All Local Data</h4>
+          <p>Uninstalling the App removes all locally stored data (interpretations, reminders, preferences).</p>
+
+          <h4>7.5 Request Server Data Deletion</h4>
+          <p>To request deletion of your server-side data (anonymous user ID and credit information), contact us at <a href="mailto:aliafzalch@zdaincorporation.com">aliafzalch@zdaincorporation.com</a>. We will process your request within 30 days.</p>
+
+          <h4>7.6 Rights Under GDPR (European Users)</h4>
+          <p>If you are located in the European Economic Area (EEA), you have the following rights under the General Data Protection Regulation (GDPR):</p>
+          <ul>
+            <li><strong>Right of access</strong>: Request a copy of the data we hold about you</li>
+            <li><strong>Right to rectification</strong>: Request correction of inaccurate data</li>
+            <li><strong>Right to erasure</strong>: Request deletion of your data</li>
+            <li><strong>Right to restriction</strong>: Request restriction of data processing</li>
+            <li><strong>Right to data portability</strong>: Request your data in a portable format</li>
+            <li><strong>Right to object</strong>: Object to processing of your data</li>
+          </ul>
+          <p>To exercise any of these rights, contact us at <a href="mailto:aliafzalch@zdaincorporation.com">aliafzalch@zdaincorporation.com</a>.</p>
+
+          <p><strong>Legal basis for processing:</strong></p>
+          <ul>
+            <li><strong>Contract performance</strong>: Processing document text to provide the interpretation service</li>
+            <li><strong>Legitimate interest</strong>: Analytics for service improvement, fraud prevention</li>
+            <li><strong>Consent</strong>: Notifications, calendar access (granted via iOS permission prompts)</li>
+          </ul>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">8.</span> Children's Privacy</h3>
+          <p>The App is not directed to children under the age of 16. We do not knowingly collect information from children. If you believe a child has used the App, please contact us and we will take steps to delete any associated data.</p>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">9.</span> International Data Transfers</h3>
+          <p>Your data may be processed in countries outside your country of residence, including:</p>
+          <ul>
+            <li><strong>United States</strong>: Firebase servers, OpenAI API</li>
+            <li><strong>European Union</strong>: Depending on Firebase region configuration</li>
+          </ul>
+          <p>We ensure that any international transfers comply with applicable data protection laws, including the use of Standard Contractual Clauses where required.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">10.</span> Changes to This Privacy Policy</h3>
+          <p>We may update this Privacy Policy from time to time. Changes will be posted in the App and on our website with an updated "Last updated" date. Material changes will be communicated through the App.</p>
+          <p>Your continued use of the App after changes constitutes acceptance of the updated Privacy Policy.</p>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="legal-block">
+          <h3><span class="legal-number">11.</span> Contact Us</h3>
+          <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+          <div class="legal-contact">
+            <p><strong>ZDA Incorporation</strong></p>
+            <p>Email: <a href="mailto:aliafzalch@zdaincorporation.com">aliafzalch@zdaincorporation.com</a></p>
+          </div>
+          <p>For GDPR-related inquiries, you may also contact your local data protection authority.</p>
+        </div>
+
+        <div class="legal-acceptance">
+          <i class="fas fa-check-circle"></i>
+          <p><em>By using LetterAssist, you acknowledge that you have read and understood this Privacy Policy.</em></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">Z</span>
+            <span class="logo-text">ZDA<span class="logo-highlight"> Inc.</span></span>
+          </a>
+          <p>Building innovative digital products and services that transform industries. A UK-registered private limited company.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="https://www.lookmydish.com/" target="_blank" rel="noopener noreferrer">LookMyDish</a></li>
+            <li><a href="letter-assist.html">LetterAssist</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+447487370120">+44 7487 370120</a></li>
+            <li><a href="mailto:aliafzalch@zdaincorporation.com">aliafzalch@zdaincorporation.com</a></li>
+            <li>2 Granton Road, Ilford</li>
+            <li>Essex, IG3 9XL, UK</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> ZDA Incorporation Limited. All rights reserved.</p>
+        <p>Registered in England & Wales | Company No. 16595623</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
